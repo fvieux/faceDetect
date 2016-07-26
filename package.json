@@ -13,6 +13,8 @@
     "gulp": "^3.9.1",
     "natural": "^0.4.0",
     "node-canvas-lambda-deps": "^1.2.0",
+    "node-png": "^0.4.3",
+    "pngstream": "0.0.1",
     "redis": "^2.6.2"
   },
   "devDependencies": {},

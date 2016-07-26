@@ -37,7 +37,7 @@ var server = app.listen(process.env.PORT || '8080', function () {
 // FV - Added config vaiable to get acuthenticate GOOGLE_APPLICATION_CREDENTIALS
 var config = {
   projectId: 'southern-silo-135620',
-  keyFilename: 'http://www.fvieux.com/cloud-vision-prj-app-engine.json'
+  keyFilename: './cloud-vision-prj-app-engine.json'
 };
 
 var gcloud = require('gcloud')(config);
@@ -93,6 +93,8 @@ function highlightFaces (inputFile, faces, outputFile, Canvas, callback) {
     // Now draw boxes around all the faces
     context.strokeStyle = 'rgba(0,255,0,0.8)';
     context.lineWidth = '5';
+
+console.log(faces);
 
     faces.forEach(function (face) {
       context.beginPath();
